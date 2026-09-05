@@ -1,0 +1,9 @@
+{
+  "name": "blend-agape-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web de Blend Agape con reservas conectadas a Google Calendar",
+  "dependencies": {
+    "googleapis": "^140.0.0"
+  }
+}
