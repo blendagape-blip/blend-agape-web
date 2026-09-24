@@ -7,7 +7,7 @@
 <meta name="description" content="Tardes de té, desayunos, coffee break y meriendas a domicilio en San Martín, Mendoza y alrededores. Reservá tu fecha online.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --crema:#F5EEE3;
@@ -31,13 +31,13 @@
   img{max-width:100%; display:block;}
   a{color:inherit;}
   .wrap{max-width:1080px; margin:0 auto; padding:0 26px;}
-  .script{font-family:'Caveat',cursive; font-weight:700; color:var(--negro);}
+  .display{font-family:'Baloo 2',sans-serif; font-weight:700; color:var(--negro);}
   section{padding:74px 0;}
   .kicker{
     font-size:13px; font-weight:600; color:var(--terracota); letter-spacing:0.01em; margin-bottom:10px;
   }
   .section-head{max-width:600px; margin-bottom:38px;}
-  .section-head h2{font-size:clamp(30px,5vw,42px); line-height:1.05;}
+  .section-head h2{font-size:clamp(30px,5vw,42px); line-height:1.05; font-family:'Work Sans'; font-weight:700; color:var(--negro);}
   .section-head p{color:var(--carbon); opacity:0.75; margin-top:12px; font-size:15.5px;}
 
   /* header */
@@ -50,7 +50,7 @@
   .nav{max-width:1080px; margin:0 auto; padding:14px 26px; display:flex; align-items:center; justify-content:space-between;}
   .brand{display:flex; align-items:center; gap:10px;}
   .brand img{width:42px; height:42px;}
-  .brand span{font-family:'Caveat',cursive; font-weight:700; font-size:22px; color:var(--negro);}
+  .brand span{font-family:'Baloo 2',sans-serif; font-weight:700; font-size:20px; color:var(--negro);}
   .nav-links{display:none; gap:26px; font-size:14px; color:var(--carbon);}
   @media(min-width:760px){.nav-links{display:flex;}}
   .nav-links a:hover{color:var(--terracota);}
@@ -68,7 +68,7 @@
   /* hero */
   .hero-grid{display:grid; grid-template-columns:1fr; gap:40px; align-items:center; padding-top:20px;}
   @media(min-width:860px){.hero-grid{grid-template-columns:1.05fr 0.95fr;}}
-  .hero h1{font-size:clamp(46px,8vw,72px); line-height:0.98; margin-bottom:18px;}
+  .hero h1{font-size:clamp(40px,7vw,62px); line-height:1.05; margin-bottom:18px;}
   .hero p.lead{font-size:16.5px; color:var(--carbon); opacity:0.8; max-width:42ch; margin-bottom:26px;}
   .hero-ctas{display:flex; flex-wrap:wrap; gap:14px;}
   .hero-photo{
@@ -89,10 +89,10 @@
     position:relative;
     box-shadow:0 16px 30px -22px rgba(60,45,30,0.35);
   }
-  .kraft:nth-child(2){transform:rotate(-0.6deg);}
   .kraft:nth-child(1){transform:rotate(0.8deg);}
+  .kraft:nth-child(2){transform:rotate(-0.6deg);}
   .kraft:nth-child(3){transform:rotate(-0.3deg);}
-  .kraft .script{font-size:30px; margin-bottom:12px; display:block;}
+  .kraft .display{font-size:26px; margin-bottom:12px; display:block;}
   .kraft p{font-size:14.5px; color:var(--carbon); opacity:0.85;}
 
   /* servicios */
@@ -101,16 +101,23 @@
   .svc{
     background:#fff; border:1px solid var(--linea); border-radius:14px; padding:26px 24px;
   }
-  .svc .script{font-size:26px; margin-bottom:8px; display:block;}
+  .svc .display{font-size:20px; margin-bottom:8px; display:block;}
   .svc p{font-size:14.5px; opacity:0.8;}
 
   /* incluye */
   .incluye-list{
-    display:grid; grid-template-columns:1fr; gap:10px 30px; column-count:1;
+    display:grid; grid-template-columns:1fr; gap:10px 30px;
   }
   @media(min-width:640px){.incluye-list{grid-template-columns:1fr 1fr;}}
   .incluye-item{display:flex; align-items:center; gap:10px; font-size:14.5px; padding:8px 0; border-bottom:1px solid var(--linea);}
   .incluye-item::before{content:"·"; color:var(--terracota); font-size:26px; line-height:0;}
+
+  /* galería */
+  .gallery-grid{display:grid; grid-template-columns:1fr; gap:14px;}
+  @media(min-width:640px){.gallery-grid{grid-template-columns:repeat(3,1fr);}}
+  .gitem{border-radius:10px; overflow:hidden; aspect-ratio:4/3; border:1px solid var(--linea);}
+  .gitem img{width:100%; height:100%; object-fit:cover; transition:transform .4s ease;}
+  .gitem:hover img{transform:scale(1.05);}
 
   /* reserva — nota de agenda */
   .reserva-wrap{display:flex; justify-content:center;}
@@ -137,7 +144,7 @@
     background:var(--crema);
   }
   .note-logo{width:46px; height:46px; margin:0 auto 10px; display:block;}
-  .note h2.script{font-size:36px; text-align:center; line-height:1; margin-bottom:2px;}
+  .note h2.display{font-size:30px; text-align:center; line-height:1; margin-bottom:2px;}
   .note p.sub{text-align:center; font-size:12.5px; opacity:0.6; margin-bottom:20px;}
   .field-row{margin-bottom:14px;}
   .field-row label{display:block; font-size:12px; text-transform:uppercase; letter-spacing:0.04em; opacity:0.6; margin-bottom:5px;}
@@ -179,10 +186,11 @@
 
 <header>
   <div class="nav">
-    <div class="brand"><img src="./imgs/logo_beige.png" alt="Blend Ágape"><span>Blend Ágape</span></div>
+    <div class="brand"><img src="./imgs/logo.png" alt="Blend Ágape"><span>Blend Ágape</span></div>
     <nav class="nav-links">
       <a href="#historia">Nuestra historia</a>
       <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
       <a href="#reserva">Reservar</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -194,7 +202,7 @@
   <div class="hero-grid">
     <div>
       <div class="kicker">Tardes de té a domicilio · San Martín, Mendoza</div>
-      <h1 class="script">Disfrutá<br>el momento</h1>
+      <h1 class="display">Disfrutá el momento</h1>
       <p class="lead">Llevamos la mesa, la vajilla, las flores y las masitas a tu casa. Tardes de té, desayunos, coffee break y meriendas — vos elegís el día.</p>
       <div class="hero-ctas">
         <a class="btn btn-dark" href="#reserva">Reservar una fecha</a>
@@ -211,9 +219,9 @@
     <h2>De dónde viene el nombre</h2>
   </div>
   <div class="historia-grid">
-    <div class="kraft"><span class="script">"Ágape"</span><p>Simboliza el amor genuino, desinteresado y acogedor: ese amor que une, escucha y hace sentir a cada persona especial.</p></div>
-    <div class="kraft"><span class="script">"Blend"</span><p>Representa la mezcla perfecta de sabores, aromas, personas y momentos compartidos.</p></div>
-    <div class="kraft"><span class="script">Nuestra misión</span><p>Blend Ágape nace con el deseo de crear momentos de encuentro, calidez y amor a través de una experiencia única de té.</p></div>
+    <div class="kraft"><span class="display">Blend</span><p>Representa la mezcla perfecta de sabores, aromas, personas y momentos compartidos.</p></div>
+    <div class="kraft"><span class="display">Ágape</span><p>Simboliza el amor genuino, desinteresado y acogedor: ese amor que une, escucha y hace sentir a cada persona especial.</p></div>
+    <div class="kraft"><span class="display" style="font-size:20px;">Nuestra misión</span><p>Blend Ágape nace con el deseo de crear momentos de encuentro, calidez y amor a través de una experiencia única de té.</p></div>
   </div>
 </section>
 
@@ -224,10 +232,10 @@
     <p>Todo se arma y se lleva a tu casa, en San Martín y departamentos cercanos.</p>
   </div>
   <div class="servicios-grid">
-    <div class="svc"><span class="script">Tardes de té</span><p>La mesa completa con mantelería, vajilla, infusiones, masitas y arreglo floral.</p></div>
-    <div class="svc"><span class="script">Desayunos</span><p>Para arrancar el día o sorprender a alguien, servido en tu casa.</p></div>
-    <div class="svc"><span class="script">Coffee break</span><p>Para reuniones, cumpleaños o encuentros con más gente.</p></div>
-    <div class="svc"><span class="script">Meriendas Teens</span><p>Pensada para cumpleaños y juntadas de los más chicos.</p></div>
+    <div class="svc"><span class="display">Tardes de té</span><p>La mesa completa con mantelería, vajilla, infusiones, masitas y arreglo floral.</p></div>
+    <div class="svc"><span class="display">Desayunos</span><p>Para arrancar el día o sorprender a alguien, servido en tu casa.</p></div>
+    <div class="svc"><span class="display">Coffee break</span><p>Pensado para encuentros empresariales: reuniones de equipo, capacitaciones y eventos corporativos.</p></div>
+    <div class="svc"><span class="display">Meriendas Teens</span><p>Una propuesta pensada para adolescentes, a partir de los 13 años — con el mismo cuidado en cada detalle.</p></div>
   </div>
 </section>
 
@@ -248,6 +256,22 @@
   </div>
 </section>
 
+<section id="galeria" class="wrap">
+  <div class="section-head">
+    <div class="kicker">Galería</div>
+    <h2>Momentos ya servidos</h2>
+    <p>Mesas y coffee breaks armados para eventos reales.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gitem"><img src="./imgs/gallery/g1.jpg" alt="Mesa de té armada con centro de flores"></div>
+    <div class="gitem"><img src="./imgs/gallery/g2.jpg" alt="Mesa larga tendida para un evento"></div>
+    <div class="gitem"><img src="./imgs/gallery/g3.jpg" alt="Tabla de madera con quesos y snacks"></div>
+    <div class="gitem"><img src="./imgs/gallery/g4.jpg" alt="Servicio individual con tetera"></div>
+    <div class="gitem"><img src="./imgs/gallery/g5.jpg" alt="Mesa buffet con arreglos florales"></div>
+    <div class="gitem"><img src="./imgs/gallery/g6.jpg" alt="Mesa larga servida, vista general"></div>
+  </div>
+</section>
+
 <section id="reserva" class="wrap">
   <div class="section-head" style="margin:0 auto 38px; text-align:center; max-width:520px;">
     <div class="kicker" style="justify-content:center; display:flex;">Reservá tu fecha</div>
@@ -256,8 +280,8 @@
   </div>
   <div class="reserva-wrap">
     <form class="note" id="reservaForm">
-      <img class="note-logo" src="./imgs/logo_beige.png" alt="Blend Ágape">
-      <h2 class="script">Agenda abierta</h2>
+      <img class="note-logo" src="./imgs/logo.png" alt="Blend Ágape">
+      <h2 class="display">Agenda abierta</h2>
       <p class="sub">completá los datos de tu reserva</p>
 
       <div class="field-row">
@@ -322,7 +346,7 @@
     <div class="contact-rows">
       <div class="crow"><span class="label">WhatsApp</span><a id="rowWa" href="#" target="_blank" rel="noopener">2634 47-5327</a></div>
       <div class="crow"><span class="label">Zona</span><span>San Martín + alrededores</span></div>
-      <div class="crow"><span class="label">Instagram</span><a href="https://www.instagram.com/blend.agape/" target="_blank" rel="noopener">@blend.agape</a></div>
+      <div class="crow"><span class="label">Instagram</span><a href="https://www.instagram.com/blendagape/" target="_blank" rel="noopener">@blendagape</a></div>
     </div>
   </div>
 </section>
